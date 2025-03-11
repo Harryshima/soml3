@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/h.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="soml.css" />
+    <title>STORY OF MY LIFE</title>
+  </head>
+  <body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">Story of<span> My Life</span></a>
+          </div>
+          <ul class="nav__links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="homelogin.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+
+    <header class="section__container header__container" id="home">
+      <div class="header__content">
+        <h1><span>2024</span> Happenings</h1>
+        <p class="section__description">
+          "Embrace the journey, cherish the moments."
+        </p>
+      </div>
+      <div class="header__image fade-in">
+        <img src="images/cross.jpg" alt="header" class="zoomable" />
+        <img src="images/nustar.jpg" alt="header" class="zoomable"/>
+        <img src="images/sungka.jpg" alt="header" class="zoomable"/>
+      </div>
+    </header>
+
+    <section class="section__container choose__container" id="about">
+      <div class="choose__image fade-in">
+        <img src="images/lto.jpg" alt="choose" class="zoomable" />
+      </div>
+      <div class="choose__content fade-in">
+        <p class="section__subheader">AUGUST</p>
+        <h2 class="section__header">LTO <span>Lilo-an</span></h2>
+        <p class="section__description">
+          "August included a visit to LTO Lilo-an, a routine task that needed to be taken care of. It was part of handling responsibilities and ensuring everything was in order. Completing it was just another step in staying on track with life's essentials."
+        </p>
+      </div>
+    </section>
+
+   
+
+    <section class="section__container explore__container">
+      <div class="explore__image fade-in">
+        <img src="images/nustar.jpg" alt="explore" class="zoomable" />
+      </div>
+      <div class="explore__content fade-in">
+        <p class="section__subheader">DECEMBER</p>
+        <h2 class="section__header">
+          LAAG <span>Laag</span>
+        </h2>
+        <p class="section__description">
+          "December was filled with ‘laag-laag’—a time for exploring, unwinding, and creating memories. The highlights of the month were spent with family, enjoying moments together and making the most of the holiday season. It was a reminder that the best times are those shared with loved ones."
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container choose__container" id="about">
+      <div class="choose__image fade-in">
+        <img src="images/cross.jpg" alt="choose" class="zoomable" />
+      </div>
+      <div class="choose__content fade-in">
+        <p class="section__subheader">NOVEMBER</p>
+        <h2 class="section__header"> DAGKOT<span> Kandila</span></h2>
+        <p class="section__description">
+          "November was a time for ‘dagkot-kandila,’ a moment to pause, reflect, and remember. Lighting candles became a quiet tribute to loved ones, honoring their memory with prayers and thoughts. It was a simple yet meaningful tradition that brought a sense of peace and connection."
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="section__container explore__container">
+      <div class="explore__image fade-in">
+        <img src="images/sungka2.jpg" alt="explore" class="zoomable"/>
+      </div>
+      <div class="explore__content fade-in">
+        <p class="section__subheader">DECEMBER</p>
+        <h2 class="section__header">
+         SUNGKA <span>Lapu-lapu</span>
+        </h2>
+        <p class="section__description">
+          "December brought a game of Sungka in Lapu-Lapu, a simple yet enjoyable way to spend time. It was a moment of fun and connection, blending tradition with relaxation. The experience made the holiday season even more special with shared laughter and friendly competition."
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery fade-in">
+      <div class="gallery__card">
+        <img src="images/sungka2.jpg" alt="Gallery Image 1" class="zoomable" />
+      </div>
+      <div class="gallery__card">
+        <img src="images/sungka.jpg" alt="Gallery Image 2" class="zoomable" />
+      </div>
+      <div class="gallery__card">
+        <img src="images/nustar.jpg" alt="Gallery Image 3" class="zoomable" />
+
+      </div>
+      <div class="gallery__card">
+        <img src="images/lto.jpg" alt="Gallery Image 4" class="zoomable"/>
+      </div>
+    </section>
+    
+    
+    <!--Contact-->
+    <div id=contact class="container1 fade-in">
+      <form>
+        <h1>Contact Us Form</h1>
+        <div class="form-group">
+          <input type="text" id="firstname" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="email" placeholder="Email" required />
+        </div>
+        <h4>Type Your Message Here...</h4>
+        <textarea required></textarea>
+        <input type="submit" value="Send" id="button" />
+      </form>
+    </div>
+
+    
+    <script src="soml.js"></script> 
+  </body>
+
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
+</html>

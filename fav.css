@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000; 
+}
+
+.container {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(44, 62, 80, 0.7);
+    color: #ecf0f1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+    /* Hover Effects */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #e74c3c;
+    transition: width 0.3s ease;
+    }
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px; 
+    background-image: url("images/Animal.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content h1 {
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.content a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: #00bfa5;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.content a:hover {
+    background-color: #008e76;
+}
+
+.gallery-section {
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+
+.land-background {
+    background-image: url('images/nice5.jpg');
+}
+
+.air-background {
+    background-image: url('images/nice2.jpg');
+}
+
+.water-background {
+    background-image: url('images/deep.jpg');
+}
+
+.land-background,
+.air-background,
+.water-background {
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #e9dfdf;
+    margin-bottom: 20px;
+}
+
+.animal-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    height: 90%;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.gallery-item { 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(176, 10, 10, 0.1);
+    overflow: hidden;
+    width: 265px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+ 
+.gallery-item p {
+    font-size: 15px;
+    color: #f3e8e8;
+    margin: 10px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-height: 75%; 
+    overflow-y: auto;
+    text-shadow: 2px 2px 4px black;
+}
+
+.gallery-item:hover p {
+    opacity: 1;
+}
+
+.title { 
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 150px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #f3e8e8;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    
+}
+
+.gallery-item:hover .title {
+    opacity: 1; 
+}
+
+.scrollable-paragraph {
+    max-height: 100px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    padding-right: 10px;
+    scrollbar-width: thin; 
+    scrollbar-color: #888 rgba(0, 0, 0, 0.127);
+    text-align: justify; /* Justify the paragraph text */
+    padding: 10px; /* Add padding to improve readability */
+}

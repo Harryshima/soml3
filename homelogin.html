@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="homelogin.css"/>
+    <title>ART-T-COOL</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="images/logo1.jpg" alt="Logo" class="logo-img" />Art-T-Cool</a>
+                </div>
+                <ul class="links">
+                    <li><a href="homepage.html">Home</a></li>
+                    <!-- Articles with dropdown -->
+                    <li class="dropdown">
+                        <a href="#">Articles</a>
+                        <ul class="dropdown-content">
+                            <li><a href="library.html">University Article</a></li>
+                            <li><a href="fav.html">Favorite Article</a></li>
+                            <li><a href="soml.html">Story of My Life</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="musicplayer.html">MP3</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="homelogin.html">Login</a></li>
+                </ul>
+                <!-- Toggle button for mobile -->
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mobile dropdown menu (for mobile only) -->
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Articles</a>
+                    <ul class="dropdown-content">
+                        <li><a href="library.html">University Article</a></li>
+                        <li><a href="fav.html">Favorite Article</a></li>
+                        <li><a href="soml.html">Story of My Life</a></li>
+                    </ul>
+                </li>
+                <li><a href="musicplayer.html">MP3</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="homelogin.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()"><strong>Sign In</strong></button>
+                <button type="button" class="toggle-btn" onclick="register()"><strong>Sign Up</strong></button>
+            </div>
+            <div class="social-icons">
+                <img src="images/fb.png" alt="Facebook">
+                <img src="images/gp.png" alt="Google">
+                <img src="images/tw.png" alt="Twitter">
+            </div>
+            <!-- Sign Up Form -->
+    <form id="register" class="input-group">
+        <div class="txt_field">
+            <input type="text" id="registerUsername" required placeholder=" ">
+            <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="email" id="registerEmail" required placeholder=" ">
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="registerPassword" required placeholder=" ">
+            <label>Password</label>
+        </div>
+            <input type="checkbox" id="agree" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn"><strong>Sign Up</strong></button>
+    </form>
+
+<!-- Login Form -->
+<form id="login" class="input-group">
+    <div class="txt_field">
+        <input type="text" id="loginUsername" required placeholder=" ">
+        <label>Username</label>
+    </div>
+    <div class="txt_field">
+        <input type="password" id="loginPassword" required placeholder=" ">
+        <label>Password</label>
+    </div>
+    <input type="checkbox" class="check-box"><span>Remember Password</span>
+    <button type="submit" class="submit-btn"><strong>Sign In</strong></button>
+</form>
+
+        </div>
+    </div>
+
+    
+
+    
+    <script src="login.js"></script>
+</body>
+</html>
